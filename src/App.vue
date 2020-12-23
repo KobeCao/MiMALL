@@ -1,27 +1,18 @@
 <template>
-  <div>{{age}}</div>
+  <div id="app">
+    <router-view></router-view>
+  </div>
 </template>
-
 <script>
-
-import axios from 'axios'
-// import jsonp from 'jsonp'
 export default {
   name: "APP",
   compomemts: {
-    
   },
   data() {
     return {
-      age: 20
     }
   },
   mounted() {
-    let url = "https://live.imooc.com/project/livedetaillist?actionType=online"
-    axios.get(url).then(()=> {
-
-    })
-    // jsonp
   }
 }
 </script>
