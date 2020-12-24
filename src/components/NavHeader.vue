@@ -1,5 +1,5 @@
 <template>
-  <div></div>
+  <div>bav-header</div>
 </template>
 
 <script>

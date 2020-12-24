@@ -1,10 +1,14 @@
 <template>
-  <div></div>
+  <div>
+    index
+  </div>
 </template>
 
 <script>
-export default {
 
+
+export default {
+  name: "index"
 }
 </script>
 
