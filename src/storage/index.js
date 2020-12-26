@@ -46,6 +46,8 @@ export default{
     let val = this.getStorage();
     // 如果有模块名称
     if(module_name){
+      // 当val[module_name]这个模块不存在的时候,return回去
+      if(!val[module_name]) return;
       // 删除模块下面的某个属性
       delete val[module_name][key];
     }else{
