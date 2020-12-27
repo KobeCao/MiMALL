@@ -1,0 +1,17 @@
+// flex复用
+// 将公共的部分提取出来，将flex固定，水平方向定义一个变量$hov默认值space-between，
+// 垂直方向定义一个变量$col默认值center。
+@mixin flex($hov:space-between,$col:center) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+// 动态定义宽度高度，动态传入图片,
+@mixin bgImg($w: 0,$h: 0, $img: '', $size: contain) {
+  display: inline-block;
+  width: $w;
+  height: $h;
+  background: url($img) no-repeat center;
+  background-size: $size;
+  margin-right: 4px;
+}
